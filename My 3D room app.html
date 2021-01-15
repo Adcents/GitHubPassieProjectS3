@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- __V3D_PUZZLES__ - enable Puzzles button in the App Manager -->
+<html lang="en">
+<head>
+  <title>Verge3D Web Interactive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <!-- Search Engines -->
+  <meta name="description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Verge3D Web Interactive">
+  <meta name="twitter:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <meta name="twitter:image:src" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Verge3D Web Interactive">
+  <meta property="og:description" content="Interactive 3D Web application made with Verge3D. Immerse yourself in amazing graphics experience offered by state-of-the WebGL and HTML5 technologies.">
+  <meta property="og:image" content="https://cdn.soft8soft.com/images/player_socials.jpg">
+  <meta property="og:type" content="website">
+
+  <meta name="generator" content="Verge3D 3.5.0">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+  <link rel="manifest" href="media/manifest.json">
+  <link rel="mask-icon" href="media/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="v3d.js"></script>
+  <script src="My 3D room app.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="My 3D room app.css">
+</head>
+
+<body>
+  <div class="bgleftTab"></div>
+  <div class="leftTab">
+
+
+    <!-- TOP, ALWAYS VISIBLE -->
+
+    <h2>Kleur je eigen kamer.</h2>
+    <p>Verander de kleuren van elk object in de kamer. Klik op een object in de 3D view of in het onderstaande menu om de object materialen aan te passen.</p>
+
+
+    <!-- CATEGORIES -->
+
+    <h3 class="categories" id="bankarea">Bank</h3>
+    <h3 class="categories" id="tvmeubelarea">TV meubel</h3>
+    <h3 class="categories" id="tafelstoelenarea">Tafel & Stoelen</h3>
+    <h3 class="categories" id="keukenarea">Keuken</h3>
+    <h3 class="categories" id="deurarea">Deur</h3>
+    <h3 class="categories" id="muurvloerarea">Muur & Vloer</h3>
+
+    <!-- ITEMS: BANK, MUUR, VLOER -->
+
+    <div id="bankitems">
+
+      <div class="item" id="bank">
+        <div><h3>Bank</h3></div>
+        <div><img class="arrow flipped" id="bankminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="bankplus" src="arrowleft.svg"></div>
+      </div>
+
+
+
+    <p class="back">go back</p>
+    </div>
+
+    <!-- ITEMS: TVMEUBELBINNEN, TVMEUBELBUITEN, MUUR, VLOER.-->
+
+     <div id="tvmeubelitems">
+
+      <div class="item" id="tvmeubelbinnen">
+        <div><h3>TV meubel (binnen)</h3></div>
+        <div><img class="arrow flipped" id="tvmeubelbinnenminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="tvmeubelbinnenplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="tvmeubelbuiten">
+        <div><h3>TV meubel (buiten)</h3></div>
+        <div><img class="arrow flipped" id="tvmeubelbuitenminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="tvmeubelbuitenplus" src="arrowleft.svg"></div>
+      </div>
+
+      <p class="back">go back</p>
+    </div>
+
+
+    <!-- ITEMS: TAFEL, STOELEN, MUUR, VLOER -->
+
+    <div id="tafelstoelenitems">
+
+      <div class="item" id="tafel">
+        <div><h3>Tafelblad</h3></div>
+        <div><img class="arrow flipped" id="tafelminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="tafelplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="tafelpoten">
+        <div><h3>Tafelpoten</h3></div>
+        <div><img class="arrow flipped" id="tafelpotenminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="tafelpotenplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="stoelen">
+        <div><h3>Stoelen</h3></div>
+        <div><img class="arrow flipped" id="stoelenminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="stoelenplus" src="arrowleft.svg"></div>
+      </div>
+
+      <p class="back">go back</p>
+    </div>
+
+
+    <!-- ITEMS: KEUKENKASTBOVEN, KEUKEKNKASTONDER, KEUKENBLAD, KEUKENACCENTEN, MUUR, VLOER -->
+
+     <div id="keukenitems">
+
+      <div class="item" id="keukenkastboven">
+        <div><h3>Keukenkastjes (boven)</h3></div>
+        <div><img class="arrow flipped" id="keukenkastbovenminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="keukenkastbovenplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="keukenkastonder">
+        <div><h3>Keukenkastjes (onder)</h3></div>
+        <div><img class="arrow flipped" id="keukenkastonderminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="keukenkastonderplus" src="arrowleft.svg"></div>
+      </div>
+
+
+      <div class="item" id="keukenblad">
+        <div><h3>Keukenblad</h3></div>
+        <div><img class="arrow flipped" id="keukenbladminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="keukenbladplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="keukenaccenten">
+        <div><h3>Keuken accenten (kraan, wasbak & handvaten)</h3></div>
+        <div><img class="arrow flipped" id="keukenaccentenminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="keukenaccentenplus" src="arrowleft.svg"></div>
+      </div>
+
+    <p class="back">go back</p>
+    </div>
+
+    <!-- ITEMS: DEUR -->
+
+     <div id="deuritems">
+
+      <div class="item" id="deur">
+        <div><h3>Deur</h3></div>
+        <div><img class="arrow flipped" id="deurminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="deurplus" src="arrowleft.svg"></div>
+      </div>
+
+      <p class="back">go back</p>
+    </div>
+
+    <!-- ITEMS: DEUR -->
+
+     <div id="muurvloeritems">
+
+      <div class="item" id="muur">
+        <div><h3>Muren</h3></div>
+        <div><img class="arrow flipped" id="muurminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="muurplus" src="arrowleft.svg"></div>
+      </div>
+
+      <div class="item" id="vloer">
+        <div><h3>Vloer</h3></div>
+        <div><img class="arrow flipped" id="vloerminus" src="arrowleft.svg"></div>
+        <div><img class="arrow" id="vloerplus" src="arrowleft.svg"></div>
+      </div>
+      <p class="back">go back</p>
+    </div>
+
+
+  </div>
+  <div id="v3d-container">
+    <!-- <div id="fullscreen_button" class="fullscreen-button fullscreen-open" title="Toggle fullscreen mode"></div> -->
+  </div>
+</body>
+
+</html>
