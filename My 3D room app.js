@@ -293,6 +293,7 @@ function runCode(app) {
         var keukenarea = document.getElementById("keukenarea");
         var deurarea = document.getElementById("deurarea");
         var muurvloerarea = document.getElementById("muurvloerarea");
+        var uitleg = document.getElementById("uitleg");
 
       // pak alle elementen met class 'back'
         var back = document.querySelectorAll(".back");
@@ -303,6 +304,7 @@ function runCode(app) {
 
 
             bankitems.style.display = "block";
+            uitleg.style.display = "none";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "none";
             }
@@ -310,7 +312,7 @@ function runCode(app) {
 
         tvmeubelarea.addEventListener("click", function(){
 
-
+            uitleg.style.display = "none";
             tvmeubelitems.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "none";
@@ -319,7 +321,7 @@ function runCode(app) {
 
         tafelstoelenarea.addEventListener("click", function(){
 
-
+            uitleg.style.display = "none";
             tafelstoelenitems.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "none";
@@ -328,7 +330,7 @@ function runCode(app) {
 
         keukenarea.addEventListener("click", function(){
 
-
+            uitleg.style.display = "none";
             keukenitems.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "none";
@@ -337,7 +339,7 @@ function runCode(app) {
 
         deurarea.addEventListener("click", function(){
 
-
+            uitleg.style.display = "none";
             deuritems.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "none";
@@ -346,7 +348,7 @@ function runCode(app) {
 
         muurvloerarea.addEventListener("click", function(){
 
-
+            uitleg.style.display = "none";
             muurvloeritems.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "none";
@@ -364,6 +366,7 @@ function runCode(app) {
             keukenitems.style.display = "none";
             deuritems.style.display = "none";
             muurvloeritems.style.display = "none";
+            uitleg.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "block";
             }
@@ -376,6 +379,7 @@ function runCode(app) {
             keukenitems.style.display = "none";
             deuritems.style.display = "none";
             muurvloeritems.style.display = "none";
+            uitleg.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "block";
             }
@@ -388,6 +392,7 @@ function runCode(app) {
             keukenitems.style.display = "none";
             deuritems.style.display = "none";
             muurvloeritems.style.display = "none";
+            uitleg.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "block";
             }
@@ -400,6 +405,7 @@ function runCode(app) {
             keukenitems.style.display = "none";
             deuritems.style.display = "none";
             muurvloeritems.style.display = "none";
+            uitleg.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "block";
             }
@@ -412,6 +418,7 @@ function runCode(app) {
             keukenitems.style.display = "none";
             deuritems.style.display = "none";
             muurvloeritems.style.display = "none";
+            uitleg.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "block";
             }
@@ -424,6 +431,7 @@ function runCode(app) {
             keukenitems.style.display = "none";
             deuritems.style.display = "none";
             muurvloeritems.style.display = "none";
+            uitleg.style.display = "block";
             for (var i = categories.length - 1; i >= 0; i--) {
                 categories[i].style.display = "block";
             }

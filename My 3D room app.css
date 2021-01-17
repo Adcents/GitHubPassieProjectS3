@@ -5,6 +5,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+#uitleg {
+  font-size: 13px;
+}
+
 #v3d-container {
     position: absolute;
     top: 0px;
@@ -136,4 +140,13 @@ opacity: 0.3;
     text-decoration: underline;
     color: gray;
 
+}
+
+.categories {
+  height: 25px;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  border: 2px solid #dadada;
+  display: grid;
+  text-align: center;
 }
